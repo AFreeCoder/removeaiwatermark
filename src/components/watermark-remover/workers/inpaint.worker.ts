@@ -31,14 +31,14 @@ async function loadOpenCV(): Promise<void> {
   try {
     console.log('🔄 Loading OpenCV.js (official) in worker...')
     
-    // 首先尝试从本地加载，如果失败则使用 CDN
+    // 首先尝试从 CDN 加载，如果失败则使用本地文件
     try {
+      self.importScripts('https://r2.removeaiwatermark.org/opencv.js')
+      console.log('✅ Loaded OpenCV from CDN')
+    } catch (cdnError) {
+      console.warn('⚠️ CDN OpenCV not available, falling back to local file...')
       self.importScripts('/libs/opencv.js')
       console.log('✅ Loaded OpenCV from local file')
-    } catch (localError) {
-      console.warn('⚠️ Local OpenCV not found, falling back to CDN...')
-      self.importScripts('https://docs.opencv.org/4.8.0/opencv.js')
-      console.log('✅ Loaded OpenCV from CDN')
     }
 
     // 等待 OpenCV 初始化完成
