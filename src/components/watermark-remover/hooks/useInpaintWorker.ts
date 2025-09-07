@@ -28,10 +28,10 @@ export function useInpaintWorker() {
   // 初始化 worker（使用 Classic Worker 支持 importScripts）
   useEffect(() => {
     if (!workerRef.current) {
-      // 通过 bundler 解析 worker 入口
-      const workerUrl = new URL('../workers/inpaint.worker.ts', import.meta.url)
-      // 使用 Classic Worker，支持 importScripts 加载 OpenCV.js
-      workerRef.current = new Worker(workerUrl, { type: 'classic' })
+      // 为避免在 Vercel 上被当作 .ts 静态资源并以 video/mp2t MIME 提供，
+      // 改为从 public 目录加载已为 JS 的 worker。
+      const publicWorkerUrl = '/workers/inpaint.worker.js'
+      workerRef.current = new Worker(publicWorkerUrl, { type: 'classic' })
 
       workerRef.current.onmessage = (e: MessageEvent<InpaintWorkerResponse>) => {
         const { type, payload, error } = e.data
