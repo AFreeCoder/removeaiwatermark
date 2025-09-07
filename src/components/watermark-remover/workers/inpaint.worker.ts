@@ -37,7 +37,10 @@ async function loadOpenCV(): Promise<void> {
       console.log('✅ Loaded OpenCV from CDN')
     } catch (cdnError) {
       console.warn('⚠️ CDN OpenCV not available, falling back to local file...')
-      self.importScripts('/libs/opencv.js')
+      // Use an absolute URL to avoid Worker "invalid URL" issues
+      const origin = (self as any).location && (self as any).location.origin ? (self as any).location.origin : ''
+      const localUrl = origin ? `${origin}/libs/opencv.js` : '/libs/opencv.js'
+      self.importScripts(localUrl)
       console.log('✅ Loaded OpenCV from local file')
     }
 
