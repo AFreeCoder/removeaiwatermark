@@ -3,5 +3,25 @@
     "app/api/**/*": {
       "maxDuration": 60
     }
-  }
+  },
+  "headers": [
+    {
+      "source": "/next/static/media/(.*\\.worker\\.js)",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/javascript"
+        }
+      ]
+    },
+    {
+      "source": "/(.*\\.worker\\.js)",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/javascript"
+        }
+      ]
+    }
+  ]
 }

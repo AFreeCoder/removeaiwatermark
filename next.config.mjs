@@ -28,6 +28,34 @@ const nextConfig = {
       },
     ],
   },
+  webpack: (config, { isServer }) => {
+    // 确保 Web Workers 正确处理
+    if (!isServer) {
+      config.resolve.fallback = {
+        ...config.resolve.fallback,
+        fs: false,
+      };
+    }
+    
+    return config;
+  },
+  async headers() {
+    return [
+      {
+        source: '/:path*',
+        headers: [
+          {
+            key: 'Cross-Origin-Embedder-Policy',
+            value: 'require-corp',
+          },
+          {
+            key: 'Cross-Origin-Opener-Policy',
+            value: 'same-origin',
+          },
+        ],
+      },
+    ];
+  },
   async redirects() {
     return [];
   },
