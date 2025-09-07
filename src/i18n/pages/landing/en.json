@@ -45,7 +45,7 @@
   "hero": {
     "title": "Remove AI Watermark Online - Free & Instant",
     "highlight_text": "Remove AI Watermark",
-    "description": "Free online tool to remove AI watermarks and logos from images.<br/>Upload, brush over watermarks, and download clean images instantly.",
+    "description": "Free online tool to remove AI watermark and logos from images.<br/>Upload, brush over watermarks, and download clean images instantly.",
     "announcement": {
       "label": "FREE",
       "title": "🎯 No Registration Required",
@@ -113,7 +113,7 @@
     "name": "introduce",
     "title": "How NoAIWatermark Works",
     "label": "Process",
-    "description": "NoAIWatermark uses advanced inpainting algorithms to perfectly remove AI watermarks from images.",
+    "description": "NoAIWatermark uses advanced inpainting algorithms to perfectly remove AI watermark from images.",
     "image": {
       "src": "/imgs/features/1.png"
     },
@@ -170,8 +170,8 @@
   },
   "usage": {
     "name": "usage",
-    "title": "How to Remove AI Watermarks with NoAIWatermark",
-    "description": "Remove AI watermarks from your AI-generated images in four simple steps with NoAIWatermark:",
+    "title": "How to Remove AI Watermark with NoAIWatermark",
+    "description": "Remove AI watermark from your AI-generated images in four simple steps with NoAIWatermark:",
     "image_position": "left",
     "text_align": "center",
     "items": [
@@ -330,7 +330,7 @@
     "description": "Have another question? We're here to help with your remove AI watermark needs using NoAIWatermark.",
     "items": [
       {
-        "title": "Is it safe to remove AI watermarks from AI-generated images?",
+        "title": "Is it safe to remove AI watermark from AI-generated images?",
         "description": "Our tool processes images locally in your browser, ensuring your images never leave your device. However, always respect copyright laws and terms of service when using AI-generated content commercially."
       },
       {
