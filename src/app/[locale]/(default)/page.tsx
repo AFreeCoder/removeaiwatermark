@@ -11,6 +11,7 @@ import Showcase from "@/components/blocks/showcase";
 import Stats from "@/components/blocks/stats";
 import Testimonial from "@/components/blocks/testimonial";
 import { getLandingPage } from "@/services/page";
+import WatermarkRemover from "@/components/watermark-remover";
 
 export async function generateMetadata({
   params,
@@ -43,6 +44,21 @@ export default async function LandingPage({
     <>
       {page.hero && <Hero hero={page.hero} />}
       {page.branding && <Branding section={page.branding} />}
+      
+      {/* 水印移除工具 */}
+      <section className="py-16 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <WatermarkRemover
+            defaultAlgorithm="telea"
+            algorithms={['telea', 'ns']}
+            defaultBrushSize={24}
+            maxDimension={2048}
+            processingBackend="wasm"
+            className="max-w-6xl mx-auto"
+          />
+        </div>
+      </section>
+
       {page.introduce && <Feature1 section={page.introduce} />}
       {page.benefit && <Feature2 section={page.benefit} />}
       {page.usage && <Feature3 section={page.usage} />}
