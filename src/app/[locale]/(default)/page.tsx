@@ -43,29 +43,41 @@ export default async function LandingPage({
   return (
     <>
       {page.hero && <Hero hero={page.hero} />}
-      {page.branding && <Branding section={page.branding} />}
+      {/* {page.branding && <Branding section={page.branding} />} */}
       
       {/* 水印移除工具 */}
-      <section className="py-16 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <WatermarkRemover
-            defaultAlgorithm="telea"
-            algorithms={['telea', 'ns']}
-            defaultBrushSize={24}
-            maxDimension={2048}
-            processingBackend="wasm"
-            className="max-w-6xl mx-auto"
-          />
-        </div>
-      </section>
-
+      {page.watermarkRemover && (
+        <section id="watermark-remover" className="py-16 bg-muted/30">
+          <div className="container mx-auto px-4">
+            <WatermarkRemover
+              defaultAlgorithm="telea"
+              algorithms={['telea', 'ns']}
+              defaultBrushSize={24}
+              maxDimension={2048}
+              processingBackend="wasm"
+              className="max-w-6xl mx-auto"
+            />
+          </div>
+        </section>
+      )}
       {page.introduce && <Feature1 section={page.introduce} />}
       {page.benefit && <Feature2 section={page.benefit} />}
-      {page.usage && <Feature3 section={page.usage} />}
+      {page.usage && (
+        <Feature3
+          section={{
+            ...page.usage,
+            // If no top-level image is set for usage,
+            // strip item images to avoid rendering the large image area.
+            items: !page.usage.image
+              ? page.usage.items?.map((item) => ({ ...item, image: undefined }))
+              : page.usage.items,
+          }}
+        />
+      )}
       {page.feature && <Feature section={page.feature} />}
       {page.showcase && <Showcase section={page.showcase} />}
       {page.stats && <Stats section={page.stats} />}
-      {page.pricing && <Pricing pricing={page.pricing} />}
+      {/* {page.pricing && <Pricing pricing={page.pricing} />} */}
       {page.testimonial && <Testimonial section={page.testimonial} />}
       {page.faq && <FAQ section={page.faq} />}
       {page.cta && <CTA section={page.cta} />}

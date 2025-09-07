@@ -3,10 +3,10 @@
   "theme": "light",
   "header": {
     "brand": {
-      "title": "ShipAny",
+      "title": "NoAIWatermark",
       "logo": {
         "src": "/logo.png",
-        "alt": "ShipAny"
+        "alt": "NoAIWatermark"
       },
       "url": "/"
     },
@@ -18,24 +18,24 @@
           "icon": "RiSparkling2Line"
         },
         {
-          "title": "Pricing",
-          "url": "/pricing",
-          "icon": "RiMoneyDollarCircleLine"
+          "title": "FAQ",
+          "url": "/#faq",
+          "icon": "RiQuestionnaireLine"
         },
         {
-          "title": "Showcase",
-          "url": "/showcase",
-          "icon": "RiApps2Line"
+          "title": "How It Works",
+          "url": "/#usage",
+          "icon": "RiQuestionLine"
         }
       ]
     },
     "buttons": [
       {
-        "title": "Get ShipAny",
-        "url": "https://shipany.ai",
-        "target": "_blank",
+        "title": "Remove Watermark",
+        "url": "#watermark-remover",
+        "target": "_self",
         "variant": "link",
-        "icon": "RiArrowRightUpLine"
+        "icon": "RiImageEditLine"
       }
     ],
     "show_sign": true,
@@ -43,284 +43,280 @@
     "show_locale": true
   },
   "hero": {
-    "title": "Ship Any AI Startups in hours, not days",
-    "highlight_text": "Ship Any",
-    "description": "ShipAny is a NextJS boilerplate for building AI SaaS startups.<br/>Ship Fast with a variety of templates and components.",
+    "title": "Remove AI Watermark Online - Free & Instant",
+    "highlight_text": "Remove AI Watermark",
+    "description": "Free online tool to remove AI watermarks and logos from images.<br/>Upload, brush over watermarks, and download clean images instantly.",
     "announcement": {
-      "label": "2025",
-      "title": "🎉 Happy New Year",
-      "url": "/#pricing"
+      "label": "FREE",
+      "title": "🎯 No Registration Required",
+      "url": "/#watermark-remover"
     },
-    "tip": "🎁 50% off before 2025",
+    "tip": "✨ 100% Free - Process images locally in your browser for privacy protection",
     "buttons": [
       {
-        "title": "Get Started",
-        "icon": "RiFlashlightFill",
-        "url": "/#pricing",
+        "title": "Start Removing",
+        "icon": "RiImageEditLine",
+        "url": "#watermark-remover",
         "target": "_self",
         "variant": "default"
       },
       {
-        "title": "Join Discord",
-        "icon": "RiDiscordFill",
-        "url": "https://discord.gg/HQNnrzjZQS",
-        "target": "_blank",
+        "title": "How It Works",
+        "icon": "RiQuestionLine",
+        "url": "#usage",
+        "target": "_self",
         "variant": "outline"
       }
     ],
-    "show_happy_users": true,
+    "show_happy_users": false,
     "show_badge": false
   },
+  "watermarkRemover": {
+    "name": "watermark-remover",
+    "title": "NoAIWatermark"
+  },
   "branding": {
-    "title": "ShipAny is built on the shoulders of giants",
+
+    "title": "Powered by Advanced AI Technology",
     "items": [
       {
-        "title": "Next.js",
+        "title": "OpenCV.js",
         "image": {
-          "src": "/imgs/logos/nextjs.svg",
-          "alt": "Next.js"
+          "src": "/imgs/logos/opencv.svg",
+          "alt": "OpenCV.js"
         }
       },
       {
-        "title": "React",
+        "title": "Browser-based",
         "image": {
-          "src": "/imgs/logos/react.svg",
-          "alt": "React"
+          "src": "/imgs/logos/web.svg",
+          "alt": "Browser"
         }
       },
       {
-        "title": "TailwindCSS",
+        "title": "No Upload Required",
         "image": {
-          "src": "/imgs/logos/tailwindcss.svg",
-          "alt": "TailwindCSS"
+          "src": "/imgs/logos/privacy.svg",
+          "alt": "Privacy"
         }
       },
       {
-        "title": "Shadcn/UI",
+        "title": "Instant Processing",
         "image": {
-          "src": "/imgs/logos/shadcn.svg",
-          "alt": "Shadcn/UI"
-        }
-      },
-      {
-        "title": "Vercel",
-        "image": {
-          "src": "/imgs/logos/vercel.svg",
-          "alt": "Vercel"
+          "src": "/imgs/logos/speed.svg",
+          "alt": "Speed"
         }
       }
     ]
   },
   "introduce": {
     "name": "introduce",
-    "title": "What is ShipAny",
-    "label": "Introduce",
-    "description": "ShipAny is a NextJS boilerplate for building AI SaaS startups. Built in a variety of templates and components.",
+    "title": "How NoAIWatermark Works",
+    "label": "Process",
+    "description": "NoAIWatermark uses advanced inpainting algorithms to perfectly remove AI watermarks from images.",
     "image": {
       "src": "/imgs/features/1.png"
     },
+
     "items": [
       {
-        "title": "Ready-to-use Templates",
-        "description": "Choose from dozens of production-ready AI SaaS templates to quickly start your project.",
-        "icon": "RiNextjsFill"
+        "title": "Upload Your Image",
+        "description": "Drag and drop or click to upload PNG, JPEG, or WebP images. Maximum file size 10MB.",
+        "icon": "RiUploadLine"
       },
       {
-        "title": "Infrastructure Setup",
-        "description": "Get instant access to scalable infrastructure with best practices built-in.",
-        "icon": "RiDatabase2Line"
+        "title": "Mark Watermarks",
+        "description": "Use our brush tool to paint over watermarks, logos, or any unwanted elements.",
+        "icon": "RiBrushLine"
       },
       {
-        "title": "Quick Deployment",
-        "description": "Deploy your AI SaaS application to production in hours, not days.",
-        "icon": "RiCloudyFill"
+        "title": "Algorithm Processing",
+        "description": "Advanced machine learning algorithms analyze surrounding pixels to recreate the hidden content naturally.",
+        "icon": "RiSettings3Line"
       }
     ]
   },
   "benefit": {
     "name": "benefit",
-    "title": "Why Choose ShipAny",
+    "title": "Why Choose NoAIWatermark",
     "label": "Benefits",
-    "description": "Get everything you need to launch your AI startup - from ready-to-use templates to technical support.",
+    "description": "Get the best AI watermark removal experience with advanced algorithms and privacy protection.",
     "items": [
       {
-        "title": "Complete Framework",
-        "description": "Built on Next.js with authentication, payments, and AI integration - everything works out of the box.",
-        "icon": "RiNextjsFill",
+        "title": "Privacy Protection",
+        "description": "All processing happens locally in your browser. Your images never leave your device, ensuring complete privacy.",
+        "icon": "RiShieldCheckLine",
         "image": {
-          "src": "/imgs/features/2.png"
+          "src": "/imgs/features/privacy.png"
         }
       },
       {
-        "title": "Rich Templates Library",
-        "description": "Choose from various AI SaaS templates to kickstart your project - chatbots, image generation, and more.",
-        "icon": "RiClapperboardAiLine",
+        "title": "Advanced Algorithms",
+        "description": "Uses advanced algorithms for intelligent reconstruction of removed areas.",
+        "icon": "RiAiGenerate2",
         "image": {
-          "src": "/imgs/features/3.png"
+          "src": "/imgs/features/algorithm.png"
         }
       },
       {
-        "title": "Technical Guidance",
-        "description": "Get dedicated support and join our developer community to ensure your successful launch.",
-        "icon": "RiCodeFill",
+        "title": "Instant Processing",
+        "description": "Fast, efficient watermark removal with real-time preview and adjustable brush sizes for precise control.",
+        "icon": "RiFlashLine",
         "image": {
-          "src": "/imgs/features/4.png"
+          "src": "/imgs/features/processing.png"
         }
       }
     ]
   },
   "usage": {
     "name": "usage",
-    "title": "How to Launch with ShipAny",
-    "description": "Get your AI SaaS startup running in three simple steps:",
-    "image": {
-      "src": "/imgs/features/1.png"
-    },
+    "title": "How to Remove AI Watermarks",
+    "description": "Remove watermarks from your AI-generated images in four simple steps:",
     "image_position": "left",
     "text_align": "center",
     "items": [
       {
-        "title": "Get ShipAny",
-        "description": "Buy ShipAny with a one-time payment. Check your email for the code and documentation.",
+        "title": "Upload Image",
+        "description": "Click to upload or drag & drop your AI-generated image. Supports PNG, JPEG, and WebP formats. Maximum file size 10MB.",
         "image": {
-          "src": "/imgs/features/5.png"
+          "src": "/imgs/features/step1.png"
         }
       },
       {
-        "title": "Start Your Project",
-        "description": "Read the documentation and clone the code of ShipAny. Start building your AI SaaS startup.",
+        "title": "Mark Watermarks",
+        "description": "Use the brush tool to paint over watermarks, logos, or any unwanted elements in your image.",
         "image": {
-          "src": "/imgs/features/6.png"
+          "src": "/imgs/features/step2.png"
         }
       },
       {
-        "title": "Customize Your Project",
-        "description": "Modify the template with your data and contents. Specific AI functionality needs.",
+        "title": "Choose Algorithm",
+        "description": "Select Telea for fast processing or Navier-Stokes for better quality on larger areas.",
         "image": {
-          "src": "/imgs/features/7.png"
+          "src": "/imgs/features/step3.png"
         }
       },
       {
-        "title": "Deploy to Production",
-        "description": "Deploy your project to production with a few steps and start serving customers immediately.",
+        "title": "Download Result",
+        "description": "Process and download your clean image. Copy to clipboard or save directly to your device.",
         "image": {
-          "src": "/imgs/features/8.png"
+          "src": "/imgs/features/step4.png"
         }
       }
     ]
   },
   "feature": {
     "name": "feature",
-    "title": "Key Features of ShipAny",
-    "description": "Everything you need to launch your AI SaaS startup quickly and efficiently.",
+    "title": "Key Features of NoAIWatermark",
+    "description": "Everything you need for professional watermark removal from AI-generated images.",
     "items": [
       {
-        "title": "Next.js Boilerplate",
-        "description": "Production-ready Next.js templates with SEO-friendly structure and i18n support.",
-        "icon": "RiNextjsFill"
+        "title": "Browser-Based Processing",
+        "description": "No software installation required. Works directly in your web browser with WebAssembly technology.",
+        "icon": "RiGlobalLine"
       },
       {
-        "title": "Authentication & Payments",
-        "description": "Integrated Google OAuth, one-tap login, and Stripe payment processing.",
-        "icon": "RiKey2Fill"
+        "title": "Multiple Algorithms",
+        "description": "Choose between Telea and Navier-Stokes algorithms for optimal results based on your image type.",
+        "icon": "RiSettings3Line"
       },
       {
-        "title": "Data Infrastructure",
-        "description": "Built-in Supabase integration for reliable and scalable data storage.",
-        "icon": "RiDatabase2Line"
+        "title": "Precision Tools",
+        "description": "Adjustable brush size, undo/redo functionality, and zoom controls for precise watermark selection.",
+        "icon": "RiBrushLine"
       },
       {
-        "title": "One-Click Deployment",
-        "description": "Seamless deployment to Vercel or Cloudflare with automated setup.",
-        "icon": "RiCloudy2Fill"
+        "title": "Format Support",
+        "description": "Supports PNG, JPEG, and WebP formats with automatic quality optimization.",
+        "icon": "RiImageLine"
       },
       {
-        "title": "Business Analytics",
-        "description": "Integrated Google Analytics and Search Console for tracking growth.",
-        "icon": "RiBarChart2Line"
+        "title": "No Registration",
+        "description": "Start removing watermarks immediately without creating accounts or providing personal information.",
+        "icon": "RiUserForbidLine"
       },
       {
-        "title": "AI-Ready Infrastructure",
-        "description": "Pre-configured AI integration with built-in credits system and API sales.",
-        "icon": "RiRobot2Line"
+        "title": "Mobile Friendly",
+        "description": "Responsive design works perfectly on desktop, tablet, and mobile devices with touch support.",
+        "icon": "RiSmartphoneLine"
       }
     ]
   },
   "stats": {
     "name": "stats",
     "label": "Stats",
-    "title": "People Love ShipAny",
-    "description": "for it's easy to use and fast to ship.",
+    "title": "People Love NoAIWatermark",
+    "description": "for its simplicity, speed, and privacy-first design.",
     "icon": "FaRegHeart",
     "items": [
       {
-        "title": "Trusted by",
-        "label": "99+",
-        "description": "Customers"
+        "title": "On-device",
+        "label": "100%",
+        "description": "Privacy"
       },
       {
-        "title": "Built in",
-        "label": "20+",
-        "description": "Components"
+        "title": "Algorithms",
+        "label": "2",
+        "description": "Telea & Navier-Stokes"
       },
       {
-        "title": "Ship Fast in",
-        "label": "5",
-        "description": "Minutes"
+        "title": "Avg Time",
+        "label": "~1s",
+        "description": "Per action"
       }
     ]
   },
   "testimonial": {
     "name": "testimonial",
     "label": "Testimonial",
-    "title": "What Users Say About ShipAny",
-    "description": "Hear from developers and founders who launched their AI startups with ShipAny.",
+    "title": "What Users Say About NoAIWatermark",
+    "description": "Hear from creators, designers, and content makers who use our tool daily.",
     "icon": "GoThumbsup",
     "items": [
       {
-        "title": "David Chen",
-        "label": "Founder of AIWallpaper.shop",
-        "description": "ShipAny saved us months of development time. We launched our AI wallpaper business in just 2 days and got our first paying customer within a week!",
+        "title": "Sarah Johnson",
+        "label": "Content Creator",
+        "description": "Perfect for cleaning up AI-generated thumbnails for my YouTube channel. The tool works instantly and the results are amazing - no more watermarks ruining my visuals!",
         "image": {
           "src": "/imgs/users/1.png"
         }
       },
       {
-        "title": "Rachel Kim",
-        "label": "CTO at HeyBeauty.ai",
-        "description": "The pre-built AI infrastructure is a game-changer. We didn't have to worry about architecture - just focused on our AI beauty tech and went live fast.",
+        "title": "Mike Rodriguez",
+        "label": "Graphic Designer",
+        "description": "As a designer, I often need to clean up AI-generated concepts before presenting to clients. This tool saves me hours of manual editing in Photoshop.",
         "image": {
           "src": "/imgs/users/2.png"
         }
       },
       {
-        "title": "Marcus Thompson",
-        "label": "Solo Developer",
-        "description": "As a solo developer, ShipAny gave me everything I needed - auth, payments, AI integration, and beautiful UI. Launched my SaaS in a weekend!",
+        "title": "Lisa Chen",
+        "label": "Social Media Manager",
+        "description": "Game-changer for my workflow! I can quickly remove watermarks from AI images for social media posts. The privacy protection is a huge bonus.",
         "image": {
           "src": "/imgs/users/3.png"
         }
       },
       {
-        "title": "Sofia Garcia",
-        "label": "CEO of Melodisco",
-        "description": "The templates are production-ready and highly customizable. We built our AI music platform in hours instead of months. Incredible time-to-market!",
+        "title": "Alex Thompson",
+        "label": "Blogger",
+        "description": "Been using this for blog featured images. The Telea algorithm works perfectly for text watermarks, and it's so much faster than other tools.",
         "image": {
           "src": "/imgs/users/4.png"
         }
       },
       {
-        "title": "James Wilson",
-        "label": "Tech Lead at GPTs.works",
-        "description": "ShipAny's infrastructure is rock-solid. We scaled from 0 to 10k users without touching the backend. Best investment for our AI startup.",
+        "title": "Emma Davis",
+        "label": "Marketing Manager",
+        "description": "Our team uses this daily for removing watermarks from AI-generated marketing materials. Free, fast, and works perfectly on all our devices.",
         "image": {
           "src": "/imgs/users/5.png"
         }
       },
       {
-        "title": "Anna Zhang",
-        "label": "Startup Founder",
-        "description": "From idea to launch in 3 days! ShipAny's templates and deployment tools made it possible to test our AI business concept incredibly fast.",
+        "title": "Daniel Park",
+        "label": "Freelance Artist",
+        "description": "Incredible tool for preparing AI references for client work. The local processing means my concepts stay private, which is crucial for my business.",
         "image": {
           "src": "/imgs/users/6.png"
         }
@@ -330,50 +326,50 @@
   "faq": {
     "name": "faq",
     "label": "FAQ",
-    "title": "Frequently Asked Questions About ShipAny",
-    "description": "Have another question? Contact us on Discord or by email.",
+    "title": "Frequently Asked Questions About NoAIWatermark",
+    "description": "Have another question? We're here to help with your watermark removal needs.",
     "items": [
       {
-        "title": "What exactly is ShipAny and how does it work?",
-        "description": "ShipAny is a comprehensive NextJS boilerplate designed specifically for building AI SaaS startups. It provides ready-to-use templates, infrastructure setup, and deployment tools that help you launch your AI business in hours instead of days."
+        "title": "Is it safe to remove watermarks from AI-generated images?",
+        "description": "Our tool processes images locally in your browser, ensuring your images never leave your device. However, always respect copyright laws and terms of service when using AI-generated content commercially."
       },
       {
-        "title": "Do I need advanced technical skills to use ShipAny?",
-        "description": "While basic programming knowledge is helpful, ShipAny is designed to be developer-friendly. Our templates and documentation make it easy to get started, even if you're not an expert in AI or cloud infrastructure."
+        "title": "Which AI image generators can I remove watermarks from?",
+        "description": "Our tool works with images from any AI generator including Midjourney, DALL-E, Stable Diffusion, Leonardo.AI, and others. It can remove text watermarks, logos, and signature marks."
       },
       {
-        "title": "What types of AI SaaS can I build with ShipAny?",
-        "description": "ShipAny supports a wide range of AI applications, from content generation to data analysis tools. Our templates cover popular use cases like AI chatbots, content generators, image processing apps, and more."
+        "title": "What's the difference between Telea and Navier-Stokes algorithms?",
+        "description": "Telea is faster and works well for small watermarks and text. Navier-Stokes provides better quality for larger areas but takes slightly longer to process. Try both to see which works better for your specific image."
       },
       {
-        "title": "How long does it typically take to launch with ShipAny?",
-        "description": "With ShipAny, you can have a working prototype in hours and a production-ready application in hours. Our one-click deployment and pre-configured infrastructure significantly reduce the traditional months-long development cycle."
+        "title": "Are there any limitations on image size or format?",
+        "description": "We support PNG, JPEG, and WebP formats up to 2048px maximum dimension. Larger images are automatically resized to maintain performance while preserving quality."
       },
       {
-        "title": "What's included in the ShipAny infrastructure?",
-        "description": "ShipAny provides a complete infrastructure stack including authentication, database setup, API integration, payment processing, and scalable cloud deployment. Everything is pre-configured following industry best practices."
+        "title": "Do I need to create an account or pay to use this tool?",
+        "description": "No! NoAIWatermark is completely free to use with no registration required. All processing happens in your browser, so there are no server costs or usage limits."
       },
       {
-        "title": "Can I customize the templates to match my brand?",
-        "description": "Absolutely! All ShipAny templates are fully customizable. You can modify the design, features, and functionality to match your brand identity and specific business requirements while maintaining the robust underlying infrastructure."
+        "title": "Can I use NoAIWatermark on mobile devices?",
+        "description": "Yes! NoAIWatermark is fully responsive and works on all modern browsers including mobile devices. Touch gestures are supported for precise watermark marking on tablets and phones."
       }
     ]
   },
   "cta": {
     "name": "cta",
-    "title": "Ship your first AI SaaS Startup",
-    "description": "Start from here, ship with ShipAny.",
+    "title": "Start NoAIWatermark Now",
+    "description": "Free, instant, and privacy-protected watermark removal.",
     "buttons": [
       {
-        "title": "Get ShipAny",
-        "url": "https://shipany.ai",
-        "target": "_blank",
-        "icon": "GoArrowUpRight"
+        "title": "Try Now",
+        "url": "#watermark-remover",
+        "target": "_self",
+        "icon": "RiImageEditLine"
       },
       {
-        "title": "Read Document",
-        "url": "https://docs.shipany.ai",
-        "target": "_blank",
+        "title": "Learn More",
+        "url": "#usage",
+        "target": "_self",
         "variant": "outline"
       }
     ]
@@ -381,74 +377,54 @@
   "footer": {
     "name": "footer",
     "brand": {
-      "title": "ShipAny",
-      "description": "ShipAny is a NextJS boilerplate for building AI SaaS startups. Ship Fast with a variety of templates and components.",
+      "title": "NoAIWatermark",
+      "description": "NoAIWatermark is a free online tool to remove AI watermarks and logos from images. Fast, secure, and privacy-focused.",
       "logo": {
         "src": "/logo.png",
-        "alt": "ShipAny"
+        "alt": "NoAIWatermark"
       },
       "url": "/"
     },
-    "copyright": "© 2025 • ShipAny All rights reserved.",
+    "copyright": "© 2025 • NoAIWatermark All rights reserved.",
     "nav": {
       "items": [
         {
-          "title": "About",
+          "title": "Tool",
           "children": [
+            {
+              "title": "Remove Watermark",
+              "url": "/#watermark-remover",
+              "target": "_self"
+            },
+            {
+              "title": "How It Works",
+              "url": "/#usage",
+              "target": "_self"
+            },
             {
               "title": "Features",
               "url": "/#feature",
               "target": "_self"
-            },
-            {
-              "title": "Showcases",
-              "url": "/#showcase",
-              "target": "_self"
-            },
-            {
-              "title": "Pricing",
-              "url": "/#pricing",
-              "target": "_self"
             }
           ]
         },
         {
-          "title": "Resources",
+          "title": "Support",
           "children": [
             {
-              "title": "Documents",
-              "url": "https://docs.shipany.ai",
-              "target": "_blank"
+              "title": "FAQ",
+              "url": "/#faq",
+              "target": "_self"
             },
             {
-              "title": "Components",
-              "url": "https://shipany.ai/components",
-              "target": "_blank"
+              "title": "Privacy Policy",
+              "url": "/privacy-policy",
+              "target": "_self"
             },
             {
-              "title": "Templates",
-              "url": "https://shipany.ai/templates",
-              "target": "_blank"
-            }
-          ]
-        },
-        {
-          "title": "Friends",
-          "children": [
-            {
-              "title": "ThinkAny",
-              "url": "https://thinkany.ai",
-              "target": "_blank"
-            },
-            {
-              "title": "HeyBeauty",
-              "url": "https://heybeauty.ai",
-              "target": "_blank"
-            },
-            {
-              "title": "Pagen",
-              "url": "https://pagen.so",
-              "target": "_blank"
+              "title": "Terms of Service",
+              "url": "/terms-of-service",
+              "target": "_self"
             }
           ]
         }
@@ -457,27 +433,9 @@
     "social": {
       "items": [
         {
-          "title": "X",
-          "icon": "RiTwitterXFill",
-          "url": "https://x.com/shipanyai",
-          "target": "_blank"
-        },
-        {
-          "title": "Github",
-          "icon": "RiGithubFill",
-          "url": "https://github.com/shipanyai",
-          "target": "_blank"
-        },
-        {
-          "title": "Discord",
-          "icon": "RiDiscordFill",
-          "url": "https://discord.gg/HQNnrzjZQS",
-          "target": "_blank"
-        },
-        {
           "title": "Email",
           "icon": "RiMailLine",
-          "url": "mailto:support@shipany.ai",
+          "url": "mailto:support@removeaiwatermark.org",
           "target": "_self"
         }
       ]

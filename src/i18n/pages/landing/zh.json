@@ -3,10 +3,10 @@
   "theme": "light",
   "header": {
     "brand": {
-      "title": "ShipAny",
+      "title": "NoAIWatermark",
       "logo": {
-        "src": "/logo.png",
-        "alt": "ShipAny"
+        "src": "/logo.svg",
+        "alt": "NoAIWatermark"
       },
       "url": "/"
     },
@@ -18,24 +18,24 @@
           "icon": "RiSparkling2Line"
         },
         {
-          "title": "定价",
-          "url": "/pricing",
-          "icon": "RiMoneyDollarCircleLine"
+          "title": "常见问题",
+          "url": "/#faq",
+          "icon": "RiQuestionnaireLine"
         },
         {
-          "title": "案例展示",
-          "url": "/showcase",
-          "icon": "RiApps2Line"
+          "title": "使用方法",
+          "url": "/#usage",
+          "icon": "RiQuestionLine"
         }
       ]
     },
     "buttons": [
       {
-        "title": "获取 ShipAny",
-        "url": "https://shipany.ai",
-        "target": "_blank",
+        "title": "移除水印",
+        "url": "#watermark-remover",
+        "target": "_self",
         "variant": "link",
-        "icon": "RiArrowRightUpLine"
+        "icon": "RiImageEditLine"
       }
     ],
     "show_sign": true,
@@ -43,206 +43,203 @@
     "show_locale": true
   },
   "hero": {
-    "title": "几小时内快速构建 AI 创业项目，而不是几天",
-    "highlight_text": "快速构建",
-    "description": "ShipAny 是一个用于构建 AI SaaS 创业项目的 NextJS 模板。<br/>通过丰富的模板和组件快速启动。",
+    "title": "在线移除 AI 图片水印 - 免费即时",
+    "highlight_text": "移除 AI 水印",
+    "description": "免费在线工具，一键移除 AI 图片中的水印和标志。<br/>上传、涂抹水印，即时下载无水印图片。",
     "announcement": {
-      "label": "2025",
-      "title": "🎉 新年快乐",
-      "url": "/#pricing"
+      "label": "免费",
+      "title": "🎯 无需注册",
+      "url": "/#watermark-remover"
     },
-    "tip": "🎁 2025年前五折优惠",
+    "tip": "✨ 100% 免费 - 本地浏览器处理，保护您的隐私",
     "buttons": [
       {
-        "title": "立即开始",
-        "icon": "RiFlashlightFill",
-        "url": "/#pricing",
+        "title": "开始移除",
+        "icon": "RiImageEditLine",
+        "url": "#watermark-remover",
         "target": "_self",
         "variant": "default"
       },
       {
-        "title": "加入 Discord",
-        "icon": "RiDiscordFill",
-        "url": "https://discord.gg/HQNnrzjZQS",
-        "target": "_blank",
+        "title": "使用方法",
+        "icon": "RiQuestionLine",
+        "url": "#usage",
+        "target": "_self",
         "variant": "outline"
       }
     ],
-    "show_happy_users": true,
+    "show_happy_users": false,
     "show_badge": false
   },
+  "watermarkRemover": {
+    "name": "watermark-remover",
+    "title": "AI 水印移除工具"
+  },
   "branding": {
-    "title": "ShipAny 建立在巨人的肩膀上",
+    "title": "基于先进的 AI 技术",
     "items": [
       {
-        "title": "Next.js",
+        "title": "OpenCV.js",
         "image": {
-          "src": "/imgs/logos/nextjs.svg",
-          "alt": "Next.js"
+          "src": "/imgs/logos/opencv.svg",
+          "alt": "OpenCV.js"
         }
       },
       {
-        "title": "React",
+        "title": "浏览器处理",
         "image": {
-          "src": "/imgs/logos/react.svg",
-          "alt": "React"
+          "src": "/imgs/logos/web.svg",
+          "alt": "Browser"
         }
       },
       {
-        "title": "TailwindCSS",
+        "title": "无需上传",
         "image": {
-          "src": "/imgs/logos/tailwindcss.svg",
-          "alt": "TailwindCSS"
+          "src": "/imgs/logos/privacy.svg",
+          "alt": "Privacy"
         }
       },
       {
-        "title": "Shadcn/UI",
+        "title": "即时处理",
         "image": {
-          "src": "/imgs/logos/shadcn.svg",
-          "alt": "Shadcn/UI"
-        }
-      },
-      {
-        "title": "Vercel",
-        "image": {
-          "src": "/imgs/logos/vercel.svg",
-          "alt": "Vercel"
+          "src": "/imgs/logos/speed.svg",
+          "alt": "Speed"
         }
       }
     ]
   },
   "introduce": {
     "name": "introduce",
-    "title": "什么是 ShipAny",
-    "label": "介绍",
-    "description": "ShipAny 是一个用于构建 AI SaaS 创业项目的 NextJS 模板，内置多种模板和组件。",
+    "title": "AI 水印移除原理",
+    "label": "工作原理",
+    "description": "NoAIWatermark 基于先进的 inpainting 算法，对图片中的 AI 水印进行完美移除。",
     "image": {
-      "src": "/imgs/features/1.png"
+      "src": "/imgs/features/watermark-process.png"
     },
     "items": [
       {
-        "title": "即用型模板",
-        "description": "从数十个生产就绪的 AI SaaS 模板中选择，快速启动您的项目。",
-        "icon": "RiNextjsFill"
+        "title": "上传图片",
+        "description": "拖放或点击上传 PNG、JPEG 或 WebP 格式的图片，最大文件大小 10MB。",
+        "icon": "RiUploadLine"
       },
       {
-        "title": "基础设施配置",
-        "description": "立即获取内置最佳实践的可扩展基础设施。",
-        "icon": "RiDatabase2Line"
+        "title": "标记水印",
+        "description": "使用笔刷工具在水印、Logo 或任何不需要的元素上涂抹。",
+        "icon": "RiBrushLine"
       },
       {
-        "title": "快速部署",
-        "description": "在几小时内将您的 AI SaaS 应用部署到生产环境，而不是几天。",
-        "icon": "RiCloudyFill"
+        "title": "算法处理",
+        "description": "先进的机器学习算法分析周围像素，自然地重建被隐藏的内容。",
+        "icon": "RiSettings3Line"
       }
     ]
   },
   "benefit": {
     "name": "benefit",
-    "title": "为什么选择 ShipAny",
+    "title": "为什么选择 NoAIWatermark",
     "label": "优势",
-    "description": "获取启动 AI 创业所需的一切 - 从即用型模板到技术支持。",
+    "description": "通过先进算法和隐私保护，获得最佳的 AI 水印移除体验。",
     "items": [
       {
-        "title": "完整框架",
-        "description": "基于 Next.js 构建，集成身份验证、支付和 AI 功能 - 一切开箱即用。",
-        "icon": "RiNextjsFill",
+        "title": "隐私保护",
+        "description": "所有处理都在您的浏览器中本地进行。您的图片不会离开您的设备，确保完全隐私。",
+        "icon": "RiShieldCheckLine",
         "image": {
-          "src": "/imgs/features/2.png"
+          "src": "/imgs/features/privacy.png"
         }
       },
       {
-        "title": "丰富的模板库",
-        "description": "选择各种 AI SaaS 模板来启动您的项目 - 聊天机器人、图像生成等。",
-        "icon": "RiClapperboardAiLine",
+        "title": "先进算法",
+        "description": "使用 OpenCV 的 Telea 和 Navier-Stokes 算法，智能重建移除区域。",
+        "icon": "RiAiGenerate2",
         "image": {
-          "src": "/imgs/features/3.png"
+          "src": "/imgs/features/algorithm.png"
         }
       },
       {
-        "title": "技术指导",
-        "description": "获得专门支持并加入我们的开发者社区，确保您成功启动。",
-        "icon": "RiCodeFill",
+        "title": "即时处理",
+        "description": "快速高效的水印移除，支持实时预览和可调节笔刷大小，精确控制。",
+        "icon": "RiFlashLine",
         "image": {
-          "src": "/imgs/features/4.png"
+          "src": "/imgs/features/processing.png"
         }
       }
     ]
   },
   "usage": {
     "name": "usage",
-    "title": "如何使用 ShipAny 启动项目",
-    "description": "通过三个简单步骤启动您的 AI SaaS 创业项目：",
+    "title": "如何移除 AI 水印",
+    "description": "通过四个简单步骤从 AI 生成的图片中移除水印：",
     "image": {
-      "src": "/imgs/features/1.png"
+      "src": "/imgs/features/watermark-demo.png"
     },
     "image_position": "left",
     "text_align": "center",
     "items": [
       {
-        "title": "获取 ShipAny",
-        "description": "一次性付款购买 ShipAny。查收邮件获取代码和文档。",
+        "title": "上传图片",
+        "description": "点击上传或拖放您的 AI 生成图片。支持 PNG、JPEG 和 WebP 格式，最大文件大小 10MB。",
         "image": {
-          "src": "/imgs/features/5.png"
+          "src": "/imgs/features/step1.png"
         }
       },
       {
-        "title": "开始您的项目",
-        "description": "阅读文档并克隆 ShipAny 代码。开始构建您的 AI SaaS 创业项目。",
+        "title": "标记水印",
+        "description": "使用笔刷工具在图片中的水印、Logo 或任何不需要的元素上涂抹。",
         "image": {
-          "src": "/imgs/features/6.png"
+          "src": "/imgs/features/step2.png"
         }
       },
       {
-        "title": "定制您的项目",
-        "description": "使用您的数据和内容修改模板。满足特定的 AI 功能需求。",
+        "title": "选择算法",
+        "description": "选择 Telea 算法进行快速处理，或选择 Navier-Stokes 算法获得大面积更好的质量。",
         "image": {
-          "src": "/imgs/features/7.png"
+          "src": "/imgs/features/step3.png"
         }
       },
       {
-        "title": "部署到生产环境",
-        "description": "通过几个步骤将项目部署到生产环境，立即开始服务客户。",
+        "title": "下载结果",
+        "description": "处理并下载您的干净图片。复制到剪贴板或直接保存到您的设备。",
         "image": {
-          "src": "/imgs/features/8.png"
+          "src": "/imgs/features/step4.png"
         }
       }
     ]
   },
   "feature": {
     "name": "feature",
-    "title": "ShipAny 核心功能",
-    "description": "快速高效启动 AI SaaS 创业所需的一切。",
+    "title": "NoAIWatermark 核心功能",
+    "description": "专业 AI 生成图片水印移除所需的一切功能。",
     "items": [
       {
-        "title": "Next.js 模板",
-        "description": "生产就绪的 Next.js 模板，支持 SEO 友好结构和国际化。",
-        "icon": "RiNextjsFill"
+        "title": "浏览器处理",
+        "description": "无需安装软件。直接在您的网页浏览器中使用 WebAssembly 技术工作。",
+        "icon": "RiGlobalLine"
       },
       {
-        "title": "身份验证和支付",
-        "description": "集成 Google OAuth、一键登录和 Stripe 支付处理。",
-        "icon": "RiKey2Fill"
+        "title": "多种算法",
+        "description": "根据您的图片类型在 Telea 和 Navier-Stokes 算法之间选择，获得最优结果。",
+        "icon": "RiSettings3Line"
       },
       {
-        "title": "数据基础设施",
-        "description": "内置 Supabase 集成，提供可靠和可扩展的数据存储。",
-        "icon": "RiDatabase2Line"
+        "title": "精确工具",
+        "description": "可调节笔刷大小、撤销/重做功能和缩放控制，精确选择水印。",
+        "icon": "RiBrushLine"
       },
       {
-        "title": "一键部署",
-        "description": "无缝部署到 Vercel 或 Cloudflare，自动化设置。",
-        "icon": "RiCloudy2Fill"
+        "title": "格式支持",
+        "description": "支持 PNG、JPEG 和 WebP 格式，自动质量优化。",
+        "icon": "RiImageLine"
       },
       {
-        "title": "业务分析",
-        "description": "集成 Google Analytics 和 Search Console 追踪增长。",
-        "icon": "RiBarChart2Line"
+        "title": "无需注册",
+        "description": "立即开始移除水印，无需创建账户或提供个人信息。",
+        "icon": "RiUserForbidLine"
       },
       {
-        "title": "AI 就绪基础设施",
-        "description": "预配置 AI 集成，内置积分系统和 API 销售。",
-        "icon": "RiRobot2Line"
+        "title": "移动友好",
+        "description": "响应式设计在桌面、平板和移动设备上完美工作，支持触摸操作。",
+        "icon": "RiSmartphoneLine"
       }
     ]
   },
@@ -273,8 +270,8 @@
   "testimonial": {
     "name": "testimonial",
     "label": "用户评价",
-    "title": "用户如何评价 ShipAny",
-    "description": "听听使用 ShipAny 启动 AI 创业项目的开发者和创始人怎么说。",
+    "title": "用户如何评价 NoAIWatermark",
+    "description": "听听创作者、设计师和内容制作者如何评价我们的工具。",
     "icon": "GoThumbsup",
     "items": [
       {
@@ -330,8 +327,8 @@
   "faq": {
     "name": "faq",
     "label": "常见问题",
-    "title": "关于 ShipAny 的常见问题",
-    "description": "还有其他问题？通过 Discord 或电子邮件联系我们。",
+    "title": "关于 AI 水印移除的常见问题",
+    "description": "还有其他问题？我们随时为您的水印移除需求提供帮助。",
     "items": [
       {
         "title": "ShipAny 究竟是什么，它是如何工作的？",
@@ -361,19 +358,19 @@
   },
   "cta": {
     "name": "cta",
-    "title": "启动您的第一个 AI SaaS 创业项目",
-    "description": "从这里开始，使用 ShipAny 启动。",
+    "title": "现在开始移除 AI 水印",
+    "description": "免费、即时、隐私保护的水印移除。",
     "buttons": [
       {
-        "title": "获取 ShipAny",
-        "url": "https://shipany.ai",
-        "target": "_blank",
-        "icon": "GoArrowUpRight"
+        "title": "立即试用",
+        "url": "#watermark-remover",
+        "target": "_self",
+        "icon": "RiImageEditLine"
       },
       {
-        "title": "阅读文档",
-        "url": "https://docs.shipany.ai",
-        "target": "_blank",
+        "title": "了解更多",
+        "url": "#usage",
+        "target": "_self",
         "variant": "outline"
       }
     ]
@@ -381,74 +378,54 @@
   "footer": {
     "name": "footer",
     "brand": {
-      "title": "ShipAny",
-      "description": "ShipAny 是一个用于构建 AI SaaS 创业项目的 NextJS 模板。通过丰富的模板和组件快速启动。",
+      "title": "NoAIWatermark",
+      "description": "NoAIWatermark 是免费的在线 AI 水印移除工具。快速、安全、注重隐私。",
       "logo": {
-        "src": "/logo.png",
-        "alt": "ShipAny"
+        "src": "/logo.svg",
+        "alt": "NoAIWatermark"
       },
       "url": "/"
     },
-    "copyright": "© 2025 • ShipAny 保留所有权利。",
+    "copyright": "© 2025 • NoAIWatermark 保留所有权利。",
     "nav": {
       "items": [
         {
-          "title": "关于",
+          "title": "工具",
           "children": [
+            {
+              "title": "移除水印",
+              "url": "/#watermark-remover",
+              "target": "_self"
+            },
+            {
+              "title": "使用方法",
+              "url": "/#usage",
+              "target": "_self"
+            },
             {
               "title": "功能特点",
               "url": "/#feature",
               "target": "_self"
-            },
-            {
-              "title": "案例展示",
-              "url": "/#showcase",
-              "target": "_self"
-            },
-            {
-              "title": "定价",
-              "url": "/#pricing",
-              "target": "_self"
             }
           ]
         },
         {
-          "title": "资源",
+          "title": "支持",
           "children": [
             {
-              "title": "文档",
-              "url": "https://docs.shipany.ai",
-              "target": "_blank"
+              "title": "常见问题",
+              "url": "/#faq",
+              "target": "_self"
             },
             {
-              "title": "组件",
-              "url": "https://shipany.ai/components",
-              "target": "_blank"
+              "title": "隐私政策",
+              "url": "/privacy-policy",
+              "target": "_self"
             },
             {
-              "title": "模板",
-              "url": "https://shipany.ai/templates",
-              "target": "_blank"
-            }
-          ]
-        },
-        {
-          "title": "友情链接",
-          "children": [
-            {
-              "title": "ThinkAny",
-              "url": "https://thinkany.ai",
-              "target": "_blank"
-            },
-            {
-              "title": "HeyBeauty",
-              "url": "https://heybeauty.ai",
-              "target": "_blank"
-            },
-            {
-              "title": "Pagen",
-              "url": "https://pagen.so",
-              "target": "_blank"
+              "title": "服务条款",
+              "url": "/terms-of-service",
+              "target": "_self"
             }
           ]
         }
@@ -457,27 +434,9 @@
     "social": {
       "items": [
         {
-          "title": "X",
-          "icon": "RiTwitterXFill",
-          "url": "https://x.com/shipanyai",
-          "target": "_blank"
-        },
-        {
-          "title": "Github",
-          "icon": "RiGithubFill",
-          "url": "https://github.com/shipanyai",
-          "target": "_blank"
-        },
-        {
-          "title": "Discord",
-          "icon": "RiDiscordFill",
-          "url": "https://discord.gg/HQNnrzjZQS",
-          "target": "_blank"
-        },
-        {
           "title": "邮箱",
           "icon": "RiMailLine",
-          "url": "mailto:support@shipany.ai",
+          "url": "mailto:support@removeaiwatermark.org",
           "target": "_self"
         }
       ]

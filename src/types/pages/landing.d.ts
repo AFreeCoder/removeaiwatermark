@@ -7,6 +7,7 @@ import { Pricing } from "@/types/blocks/pricing";
 export interface LandingPage {
   header?: Header;
   hero?: Hero;
+  watermarkRemover?: Section;
   branding?: Section;
   introduce?: Section;
   benefit?: Section;
