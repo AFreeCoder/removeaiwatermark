@@ -1,6 +1,10 @@
 {
   "template": "shipany-template-one",
   "theme": "light",
+  "metadata": {
+    "title": "在线移除AI水印 - 免费工具 | NoAIWatermark",
+    "description": "免费在线工具，移除AI生成图片中的水印和标志。上传图片，涂抹水印，立即下载干净图片。100%免费，无需注册。"
+  },
   "header": {
     "brand": {
       "title": "NoAIWatermark",
@@ -393,18 +397,8 @@
           "title": "工具",
           "children": [
             {
-              "title": "移除水印",
-              "url": "/#watermark-remover",
-              "target": "_self"
-            },
-            {
-              "title": "使用方法",
-              "url": "/#usage",
-              "target": "_self"
-            },
-            {
-              "title": "功能特点",
-              "url": "/#feature",
+              "title": "移除 Gemini 水印",
+              "url": "/remove-gemini-watermark",
               "target": "_self"
             }
           ]

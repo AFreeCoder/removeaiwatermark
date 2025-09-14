@@ -19,6 +19,8 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
+  const page = await getLandingPage(locale);
+
   let canonicalUrl = `${process.env.NEXT_PUBLIC_WEB_URL}`;
 
   if (locale !== "en") {
@@ -26,6 +28,14 @@ export async function generateMetadata({
   }
 
   return {
+    title: page.metadata?.title,
+    description: page.metadata?.description,
+    openGraph: {
+      title: page.metadata?.title,
+      description: page.metadata?.description,
+      url: canonicalUrl,
+      type: 'website',
+    },
     alternates: {
       canonical: canonicalUrl,
     },

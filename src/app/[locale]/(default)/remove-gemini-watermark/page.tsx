@@ -1,6 +1,7 @@
 import FAQ from "@/components/blocks/faq";
 import Feature1 from "@/components/blocks/feature1";
 import Feature3 from "@/components/blocks/feature3";
+import Hero from "@/components/blocks/hero";
 import { getRemoveGeminiWatermarkPage } from "@/services/page";
 import WatermarkRemover from "@/components/watermark-remover";
 
@@ -19,11 +20,11 @@ export async function generateMetadata({
   }
 
   return {
-    title: page.watermarkRemover?.title,
-    description: page.watermarkRemover?.description,
+    title: page.metadata?.title,
+    description: page.metadata?.description,
     openGraph: {
-      title: page.watermarkRemover?.title,
-      description: page.watermarkRemover?.description,
+      title: page.metadata?.title,
+      description: page.metadata?.description,
       url: canonicalUrl,
       type: 'website',
     },
@@ -43,18 +44,13 @@ export default async function RemoveGeminiWatermarkPage({
 
   return (
     <>
-      {/* 水印移除工具区域 - 包含标题和描述 */}
+      {/* Hero 区域 */}
+      {page.hero && <Hero hero={page.hero} />}
+
+      {/* 水印移除工具区域 */}
       {page.watermarkRemover && (
         <section id="watermark-remover" className="py-16 bg-muted/30">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-8">
-              <h1 className="text-4xl font-bold mb-4">
-                {page.watermarkRemover.title}
-              </h1>
-              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                {page.watermarkRemover.description}
-              </p>
-            </div>
             <WatermarkRemover
               defaultAlgorithm="telea"
               algorithms={['telea', 'ns']}

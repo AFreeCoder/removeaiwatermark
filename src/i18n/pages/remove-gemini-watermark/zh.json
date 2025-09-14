@@ -1,10 +1,18 @@
 {
   "template": "shipany-template-one",
   "theme": "light",
-  "watermarkRemover": {
-    "name": "watermark-remover",
+  "metadata": {
+    "title": "移除 Gemini 水印 - 免费在线去除 AI 图片水印工具 | NoAIWatermark",
+    "description": "免费在线移除 Gemini AI 图片水印。NoAIWatermark 帮您轻松去除 Gemini 水印，效果完美，无需注册，完全免费的在线工具。"
+  },
+  "hero": {
     "title": "在线移除 Gemini 水印 - 免费即时",
-    "description": "专业的在线工具，用于移除 AI 生成图片中的 Gemini 水印。完全免费，在浏览器中工作，无需注册。"
+    "highlight_text": "移除 Gemini 水印",
+    "description": "专业的在线工具，用于移除 AI 生成图片中的 Gemini 水印。<br/>完全免费，在浏览器中工作，无需注册。",
+    "tip": "✨ 100% 免费 - 在浏览器中本地处理 Gemini 图片，保护您的隐私"
+  },
+  "watermarkRemover": {
+    "name": "watermark-remover"
   },
   "whatIsGemini": {
     "name": "what-is-gemini",

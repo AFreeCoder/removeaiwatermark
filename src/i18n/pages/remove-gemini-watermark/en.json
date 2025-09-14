@@ -1,10 +1,17 @@
 {
   "template": "shipany-template-one",
   "theme": "light",
-  "watermarkRemover": {
-    "name": "watermark-remover",
+  "metadata": {
     "title": "Remove Gemini Watermark Online - Free & Instant",
     "description": "Professional online tool to remove Gemini watermark from AI-generated images. Completely free, works in your browser, no registration required."
+  },
+  "hero": {
+    "title": "Remove Gemini Watermark Online - Free & Instant",
+    "highlight_text": "Remove Gemini Watermark",
+    "description": "Professional online tool to remove Gemini watermark from AI-generated images.<br/>Completely free, works in your browser, no registration required."
+  },
+  "watermarkRemover": {
+    "name": "watermark-remover"
   },
   "whatIsGemini": {
     "name": "what-is-gemini",

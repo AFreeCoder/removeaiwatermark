@@ -5,6 +5,10 @@ import { Footer } from "@/types/blocks/footer";
 import { Pricing } from "@/types/blocks/pricing";
 
 export interface LandingPage {
+  metadata?: {
+    title?: string;
+    description?: string;
+  };
   header?: Header;
   hero?: Hero;
   watermarkRemover?: Section;
@@ -31,6 +35,11 @@ export interface ShowcasePage {
 }
 
 export interface RemoveGeminiWatermarkPage {
+  metadata?: {
+    title?: string;
+    description?: string;
+  };
+  hero?: Hero;
   watermarkRemover?: Section;
   whatIsGemini?: Section;
   howToRemove?: Section;
