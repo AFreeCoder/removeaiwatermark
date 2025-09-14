@@ -1,19 +1,50 @@
-import { Metadata } from 'next'
 import WatermarkRemover from '@/components/watermark-remover'
+import { getRemoveGeminiWatermarkPage } from '@/services/page'
 
-export const metadata: Metadata = {
-  title: 'Remove AI Watermark Online - Free Tool | NoAIWatermark',
-  description: 'Free online tool to remove AI watermark and logos. Upload, brush, erase, and download clean AI images instantly.',
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  const page = await getRemoveGeminiWatermarkPage(locale);
+
+  let canonicalUrl = `${process.env.NEXT_PUBLIC_WEB_URL}/watermark-remover`;
+  if (locale !== "en") {
+    canonicalUrl = `${process.env.NEXT_PUBLIC_WEB_URL}/${locale}/watermark-remover`;
+  }
+
+  return {
+    title: page.watermarkRemover?.title || 'Remove AI Watermark Online - Free Tool | NoAIWatermark',
+    description: page.watermarkRemover?.description || 'Free online tool to remove AI watermark and logos. Upload, brush, erase, and download clean AI images instantly.',
+    openGraph: {
+      title: page.watermarkRemover?.title || 'Remove AI Watermark Online - Free Tool | NoAIWatermark',
+      description: page.watermarkRemover?.description || 'Free online tool to remove AI watermark and logos. Upload, brush, erase, and download clean AI images instantly.',
+      url: canonicalUrl,
+      type: 'website',
+    },
+    alternates: {
+      canonical: canonicalUrl,
+    },
+  };
 }
 
-export default function WatermarkRemoverPage() {
+export default async function WatermarkRemoverPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  const page = await getRemoveGeminiWatermarkPage(locale);
   return (
     <div className="container mx-auto px-4 py-8">
       {/* 页面标题和介绍 */}
       <div className="text-center mb-8">
-        <h1 className="text-4xl font-bold mb-4">Remove AI Watermark Online</h1>
+        <h1 className="text-4xl font-bold mb-4">
+          {page.watermarkRemover?.title || 'Remove AI Watermark Online'}
+        </h1>
         <p className="text-xl text-muted-foreground mb-2">
-          Use advanced Inpainting algorithms to easily remove watermarks, logos, and unwanted objects from AI-generated images
+          {page.watermarkRemover?.description || 'Use advanced Inpainting algorithms to easily remove watermarks, logos, and unwanted objects from AI-generated images'}
         </p>
         <p className="text-sm text-muted-foreground">
           Local processing protects your privacy • Supports PNG, JPEG, WebP formats • Completely free to use

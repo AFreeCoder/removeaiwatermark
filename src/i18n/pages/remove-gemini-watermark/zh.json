@@ -1,0 +1,87 @@
+{
+  "template": "shipany-template-one",
+  "theme": "light",
+  "watermarkRemover": {
+    "name": "watermark-remover",
+    "title": "在线移除 Gemini 水印 - 免费即时",
+    "description": "专业的在线工具，用于移除 AI 生成图片中的 Gemini 水印。完全免费，在浏览器中工作，无需注册。"
+  },
+  "whatIsGemini": {
+    "name": "what-is-gemini",
+    "title": "了解 Gemini AI 水印",
+    "label": "关于 Gemini 水印",
+    "description": "Google Gemini AI 会在生成的图片中添加可见和不可见的双重水印。可见水印显示为底部角落的小蓝色菱形，而 SynthID 技术则在图像像素中嵌入不可见的数字水印进行识别。",
+    "items": [
+      {
+        "title": "可见菱形水印",
+        "description": "Gemini 在 AI 生成图片的底部角落（通常是左下角或右下角）放置小蓝色菱形标志，用于清晰识别。",
+        "icon": "RiShapeLine"
+      },
+      {
+        "title": "SynthID 不可见水印",
+        "description": "直接嵌入图像像素中的高级数字水印，人眼无法察觉但可通过检测工具识别。",
+        "icon": "RiEyeOffLine"
+      },
+      {
+        "title": "双重保护系统",
+        "description": "可见和不可见水印协同工作，确保 AI 生成的内容能够被正确识别和归属。",
+        "icon": "RiShieldCheckLine"
+      }
+    ]
+  },
+  "howToRemove": {
+    "name": "how-to-remove",
+    "title": "如何使用 NoAIWatermark 移除 Gemini 水印",
+    "label": "教程",
+    "description": "按照这些简单步骤使用我们的免费在线工具从您的 AI 生成图片中移除 Gemini 水印。",
+    "items": [
+      {
+        "title": "上传 Gemini 图片",
+        "description": "拖放您的 Gemini AI 图片或点击上传。支持 PNG、JPEG 和 WebP 格式，本地处理保护隐私。",
+        "icon": "RiUploadLine"
+      },
+      {
+        "title": "标记水印区域",
+        "description": "使用画笔工具精确标记 Gemini 水印区域。调整画笔大小适应不同水印尺寸，支持撤销/重做操作。",
+        "icon": "RiBrushLine"
+      },
+      {
+        "title": "处理并下载",
+        "description": "点击处理按钮移除 Gemini 水印。下载干净的图片或复制到剪贴板，同时保持原始质量。",
+        "icon": "RiDownloadLine"
+      }
+    ]
+  },
+  "faq": {
+    "name": "faq",
+    "label": "常见问题",
+    "title": "关于移除 Gemini 水印的常见问题",
+    "description": "使用 NoAIWatermark 移除 Gemini 水印的常见问题。",
+    "items": [
+      {
+        "title": "从 AI 图片中移除 Gemini 水印是否合法？",
+        "description": "我们的工具帮助您移除 Gemini 水印用于个人使用和合法目的。在商业使用 AI 生成内容时，请始终尊重 Google 的服务条款和版权法。NoAIWatermark 在本地处理图片以保护隐私。"
+      },
+      {
+        "title": "NoAIWatermark 专门适用于 Gemini 水印吗？",
+        "description": "是的！NoAIWatermark 能够有效移除 Gemini AI 生成图片中的可见菱形水印。但是，它主要针对可见水印 - 嵌入在像素中的不可见 SynthID 水印设计为持久性的，可能会保留用于内容识别目的。"
+      },
+      {
+        "title": "当我移除 Gemini 水印时如何保护隐私？",
+        "description": "完全隐私保护！当您使用 NoAIWatermark 移除 Gemini 水印时，所有处理都在您的浏览器中本地进行。您的图片永远不会离开您的设备。"
+      },
+      {
+        "title": "使用此工具移除 Gemini 水印是否收费？",
+        "description": "NoAIWatermark 移除 Gemini 水印完全免费。无需注册，没有隐藏费用，没有使用限制。"
+      },
+      {
+        "title": "NoAIWatermark 在 Gemini 水印移除方面有什么优势？",
+        "description": "NoAIWatermark 结合了智能处理、基于浏览器的本地操作保护隐私，以及专门针对移除 Gemini 水印优化的用户友好设计，提供专业效果。"
+      },
+      {
+        "title": "我可以在移动设备上使用这个工具吗？",
+        "description": "可以！NoAIWatermark 在移动设备上完美运行，支持触摸操作，可在智能手机和平板电脑上精确标记水印。"
+      }
+    ]
+  }
+}

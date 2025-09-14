@@ -1,0 +1,90 @@
+{
+  "template": "shipany-template-one",
+  "theme": "light",
+  "watermarkRemover": {
+    "name": "watermark-remover",
+    "title": "Remove Gemini Watermark Online - Free & Instant",
+    "description": "Professional online tool to remove Gemini watermark from AI-generated images. Completely free, works in your browser, no registration required."
+  },
+  "whatIsGemini": {
+    "name": "what-is-gemini",
+    "title": "Understanding Gemini AI Watermarks",
+    "label": "About Gemini Watermarks",
+    "description": "Google Gemini AI adds both visible and invisible watermarks to generated images. The visible watermark appears as a small blue diamond in the bottom corner, while SynthID technology embeds an invisible digital watermark in the image pixels for identification.",
+    "image": {
+      "src": "/imgs/features/remove-gemini-watermark-1.png"
+    },
+    "items": [
+      {
+        "title": "Visible Diamond Watermark",
+        "description": "Gemini places a small blue diamond logo in the bottom corner (usually left or right) of AI-generated images for clear identification.",
+        "icon": "RiShapeLine"
+      },
+      {
+        "title": "SynthID Invisible Watermark",
+        "description": "Advanced digital watermark embedded directly in image pixels, undetectable to human eyes but identifiable by detection tools.",
+        "icon": "RiEyeOffLine"
+      },
+      {
+        "title": "Dual Protection System",
+        "description": "Both visible and invisible watermarks work together to ensure AI-generated content can be properly identified and attributed.",
+        "icon": "RiShieldCheckLine"
+      }
+    ]
+  },
+  "howToRemove": {
+    "name": "how-to-remove",
+    "title": "How to Remove Gemini Watermark with NoAIWatermark",
+    "label": "Tutorial",
+    "description": "Follow these simple steps to remove Gemini watermark from your AI-generated images using our free online tool.",
+    "items": [
+      {
+        "title": "Upload Gemini Image",
+        "description": "Drag and drop your Gemini AI image or click to upload. Supports PNG, JPEG, and WebP formats with local processing for privacy protection.",
+        "icon": "RiUploadLine"
+      },
+      {
+        "title": "Mark Watermark Areas",
+        "description": "Use the brush tool to precisely mark the Gemini watermark areas. Adjust brush size for different watermark sizes and support undo/redo operations.",
+        "icon": "RiBrushLine"
+      },
+      {
+        "title": "Process and Download",
+        "description": "Click the process button to remove Gemini watermark. Download the clean image or copy to clipboard while maintaining original quality.",
+        "icon": "RiDownloadLine"
+      }
+    ]
+  },
+  "faq": {
+    "name": "faq",
+    "label": "FAQ",
+    "title": "Frequently Asked Questions - Remove Gemini Watermark",
+    "description": "Common questions about removing Gemini watermark with NoAIWatermark.",
+    "items": [
+      {
+        "title": "Is it legal to remove Gemini watermark from AI images?",
+        "description": "Our tool helps you remove Gemini watermark for personal use and legitimate purposes. Always respect Google's terms of service and copyright laws when using AI-generated content commercially. NoAIWatermark processes images locally for privacy protection."
+      },
+      {
+        "title": "Does NoAIWatermark work specifically with Gemini watermarks?",
+        "description": "Yes! NoAIWatermark can effectively remove Gemini's visible diamond watermarks from AI-generated images. However, it focuses on the visible watermarks - the invisible SynthID watermarks embedded in pixels are designed to be persistent and may remain for content identification purposes."
+      },
+      {
+        "title": "How is my privacy protected when I remove Gemini watermark?",
+        "description": "Complete privacy protection! When you remove Gemini watermark with NoAIWatermark, all processing happens locally in your browser. Your images never leave your device."
+      },
+      {
+        "title": "Is there a cost to remove Gemini watermark with this tool?",
+        "description": "NoAIWatermark is completely free to remove Gemini watermark. No registration, no hidden fees, no usage limits."
+      },
+      {
+        "title": "What makes NoAIWatermark better for Gemini watermark removal?",
+        "description": "NoAIWatermark combines smart processing, local browser-based operation for privacy, and user-friendly design specifically optimized to remove Gemini watermark with professional results."
+      },
+      {
+        "title": "Can I use this tool on mobile devices?",
+        "description": "Yes! NoAIWatermark works perfectly on mobile devices with touch support for precise watermark marking on smartphones and tablets."
+      }
+    ]
+  }
+}

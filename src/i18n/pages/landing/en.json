@@ -38,7 +38,7 @@
         "icon": "RiImageEditLine"
       }
     ],
-    "show_sign": true,
+    "show_sign": false,
     "show_theme": true,
     "show_locale": true
   },
@@ -76,7 +76,6 @@
     "title": "NoAIWatermark"
   },
   "branding": {
-
     "title": "Powered by Advanced AI Technology",
     "items": [
       {

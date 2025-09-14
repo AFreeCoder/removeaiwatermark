@@ -29,3 +29,10 @@ export interface PricingPage {
 export interface ShowcasePage {
   showcase?: Section;
 }
+
+export interface RemoveGeminiWatermarkPage {
+  watermarkRemover?: Section;
+  whatIsGemini?: Section;
+  howToRemove?: Section;
+  faq?: Section;
+}
