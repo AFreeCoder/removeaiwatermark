@@ -10,31 +10,20 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
+  const page = await getRemoveGeminiWatermarkPage(locale);
+
   let canonicalUrl = `${process.env.NEXT_PUBLIC_WEB_URL}/remove-gemini-watermark`;
 
   if (locale !== "en") {
     canonicalUrl = `${process.env.NEXT_PUBLIC_WEB_URL}/${locale}/remove-gemini-watermark`;
   }
 
-  const title = locale === "zh"
-    ? "移除 Gemini 水印 - 免费在线去除 AI 图片水印工具 | NoAIWatermark"
-    : "Remove Gemini Watermark Online - Free AI Watermark Remover | NoAIWatermark";
-
-  const description = locale === "zh"
-    ? "免费在线移除 Gemini AI 图片水印。NoAIWatermark 帮您轻松去除 Gemini 水印，效果完美，无需注册，完全免费的在线工具。"
-    : "Remove watermark from Gemini AI images instantly and free. NoAIWatermark helps you remove Gemini watermark with perfect results. No registration required, completely free online tool.";
-
-  const keywords = locale === "zh"
-    ? "移除gemini水印, gemini水印去除, 去除gemini水印, NoAIWatermark, 免费水印移除工具"
-    : "remove gemini watermark, gemini watermark removal, remove watermark gemini, NoAIWatermark, free watermark remover";
-
   return {
-    title,
-    description,
-    keywords,
+    title: page.watermarkRemover?.title,
+    description: page.watermarkRemover?.description,
     openGraph: {
-      title,
-      description,
+      title: page.watermarkRemover?.title,
+      description: page.watermarkRemover?.description,
       url: canonicalUrl,
       type: 'website',
     },
