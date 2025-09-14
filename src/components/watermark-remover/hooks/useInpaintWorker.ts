@@ -30,8 +30,11 @@ export function useInpaintWorker() {
     if (!workerRef.current) {
       // 为避免在 Vercel 上被当作 .ts 静态资源并以 video/mp2t MIME 提供，
       // 改为从 public 目录加载已为 JS 的 worker。
-      const publicWorkerUrl = '/workers/inpaint.worker.js'
-      workerRef.current = new Worker(publicWorkerUrl, { type: 'classic' })
+      // 使用 public 目录的 classic worker。为避免 Turbopack 对 `new Worker(...)` 的静态分析限制，
+      // 通过 `window.Worker` 构造器间接创建（默认即 classic 模式，无需传 { type: 'classic' }）。
+      const WorkerCtor = (window as any).Worker as typeof Worker | undefined
+      if (!WorkerCtor) throw new Error('Worker constructor not available')
+      workerRef.current = new WorkerCtor('/workers/inpaint.worker.js')
 
       workerRef.current.onmessage = (e: MessageEvent<InpaintWorkerResponse>) => {
         const { type, payload, error } = e.data
