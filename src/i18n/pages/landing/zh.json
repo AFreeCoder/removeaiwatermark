@@ -9,13 +9,23 @@
     "brand": {
       "title": "NoAIWatermark",
       "logo": {
-        "src": "/logo.svg",
+        "src": "/logo.png",
         "alt": "NoAIWatermark"
       },
       "url": "/"
     },
     "nav": {
       "items": [
+        {
+          "title": "工具",
+          "children": [
+            {
+              "title": "移除 Gemini 水印",
+              "url": "/remove-gemini-watermark",
+              "target": "_self"
+            }
+          ]
+        },
         {
           "title": "功能特点",
           "url": "/#feature",
@@ -25,11 +35,6 @@
           "title": "常见问题",
           "url": "/#faq",
           "icon": "RiQuestionnaireLine"
-        },
-        {
-          "title": "使用方法",
-          "url": "/#usage",
-          "icon": "RiQuestionLine"
         }
       ]
     },
@@ -42,7 +47,7 @@
         "icon": "RiImageEditLine"
       }
     ],
-    "show_sign": true,
+    "show_sign": false,
     "show_theme": true,
     "show_locale": true
   },
@@ -77,7 +82,7 @@
   },
   "watermarkRemover": {
     "name": "watermark-remover",
-    "title": "AI 水印移除工具"
+    "title": "NoAIWatermark"
   },
   "branding": {
     "title": "基于先进的 AI 技术",
@@ -118,7 +123,7 @@
     "label": "工作原理",
     "description": "NoAIWatermark 基于先进的 inpainting 算法，对图片中的 AI 水印进行完美移除。",
     "image": {
-      "src": "/imgs/features/watermark-process.png"
+      "src": "/imgs/features/1.png"
     },
     "items": [
       {
@@ -174,9 +179,6 @@
     "name": "usage",
     "title": "如何移除 AI 水印",
     "description": "通过四个简单步骤从 AI 生成的图片中移除水印：",
-    "image": {
-      "src": "/imgs/features/watermark-demo.png"
-    },
     "image_position": "left",
     "text_align": "center",
     "items": [
@@ -250,24 +252,24 @@
   "stats": {
     "name": "stats",
     "label": "统计",
-    "title": "用户喜爱 ShipAny",
-    "description": "因为它易于使用且快速发布。",
+    "title": "用户喜爱 NoAIWatermark",
+    "description": "因为其简单、快速和隐私优先的设计。",
     "icon": "FaRegHeart",
     "items": [
       {
-        "title": "信任",
-        "label": "99+",
-        "description": "客户"
+        "title": "本地处理",
+        "label": "100%",
+        "description": "隐私保护"
       },
       {
-        "title": "内置",
-        "label": "20+",
-        "description": "组件"
+        "title": "算法",
+        "label": "2",
+        "description": "Telea & Navier-Stokes"
       },
       {
-        "title": "快速发布",
-        "label": "5",
-        "description": "分钟"
+        "title": "平均处理时间",
+        "label": "~1秒",
+        "description": "每次操作"
       }
     ]
   },
@@ -279,49 +281,49 @@
     "icon": "GoThumbsup",
     "items": [
       {
-        "title": "陈大卫",
-        "label": "AIWallpaper.shop 创始人",
-        "description": "ShipAny 为我们节省了数月的开发时间。我们仅用 2 天就启动了 AI 壁纸业务，一周内就获得了第一个付费客户！",
+        "title": "Sarah Johnson",
+        "label": "内容创作者",
+        "description": "非常适合清理 YouTube 频道的 AI 生成缩略图。NoAIWatermark 可以即时移除 AI 水印，效果令人惊叹 - 再也不用担心水印破坏视觉效果了！",
         "image": {
           "src": "/imgs/users/1.png"
         }
       },
       {
-        "title": "金瑞秋",
-        "label": "HeyBeauty.ai 技术总监",
-        "description": "预构建的 AI 基础设施是一个游戏规则改变者。我们无需担心架构 - 只需专注于 AI 美容技术并快速上线。",
+        "title": "Mike Rodriguez",
+        "label": "平面设计师",
+        "description": "作为设计师，我经常需要在向客户展示之前清理 AI 生成的概念图。NoAIWatermark 帮我移除 AI 水印，为我节省了数小时的 Photoshop 手动编辑时间。",
         "image": {
           "src": "/imgs/users/2.png"
         }
       },
       {
-        "title": "马库斯",
-        "label": "独立开发者",
-        "description": "作为独立开发者，ShipAny 给了我所需的一切 - 身份验证、支付、AI 集成和漂亮的 UI。一个周末就启动了我的 SaaS！",
+        "title": "Lisa Chen",
+        "label": "社交媒体经理",
+        "description": "这是我工作流程的游戏改变者！我可以使用 NoAIWatermark 快速从社交媒体帖子的 AI 图片中移除 AI 水印。隐私保护是一个巨大的优势。",
         "image": {
           "src": "/imgs/users/3.png"
         }
       },
       {
-        "title": "索菲亚",
-        "label": "Melodisco CEO",
-        "description": "这些模板可直接用于生产且高度可定制。我们用几小时而不是几个月就建立了 AI 音乐平台。上市时间令人难以置信！",
+        "title": "Alex Thompson",
+        "label": "博主",
+        "description": "一直在使用 NoAIWatermark 处理博客特色图片。Telea 算法可以完美移除 AI 水印，特别是文字水印，而且速度比其他工具快得多。",
         "image": {
           "src": "/imgs/users/4.png"
         }
       },
       {
-        "title": "詹姆斯",
-        "label": "GPTs.works 技术主管",
-        "description": "ShipAny 的基础设施非常稳固。我们从 0 扩展到 1 万用户都没碰后端。这是我们 AI 创业最好的投资。",
+        "title": "Emma Davis",
+        "label": "营销经理",
+        "description": "我们的团队每天都使用 NoAIWatermark 从 AI 生成的营销材料中移除 AI 水印。免费、快速，在所有设备上都能完美运行。",
         "image": {
           "src": "/imgs/users/5.png"
         }
       },
       {
-        "title": "张安娜",
-        "label": "创业者",
-        "description": "从想法到上线只用了 3 天！ShipAny 的模板和部署工具让我们能够以令人难以置信的速度测试 AI 业务概念。",
+        "title": "Daniel Park",
+        "label": "自由艺术家",
+        "description": "为客户工作准备 AI 参考的绝佳工具。NoAIWatermark 帮我在本地移除 AI 水印，所以我的概念保持私密，这对我的业务至关重要。",
         "image": {
           "src": "/imgs/users/6.png"
         }
@@ -331,32 +333,32 @@
   "faq": {
     "name": "faq",
     "label": "常见问题",
-    "title": "关于 AI 水印移除的常见问题",
+    "title": "关于 NoAIWatermark 移除 AI 水印工具的常见问题",
     "description": "还有其他问题？我们随时为您的水印移除需求提供帮助。",
     "items": [
       {
-        "title": "ShipAny 究竟是什么，它是如何工作的？",
-        "description": "ShipAny 是一个专门为构建 AI SaaS 创业项目设计的综合性 NextJS 模板。它提供即用型模板、基础设施设置和部署工具，帮助您在几小时内而不是几天内启动 AI 业务。"
+        "title": "从 AI 生成的图片中移除 AI 水印安全吗？",
+        "description": "我们的工具在您的浏览器中本地处理图片，确保您的图片不会离开您的设备。但是，在商业使用 AI 生成内容时，请始终遵守版权法和服务条款。"
       },
       {
-        "title": "使用 ShipAny 需要高级技术技能吗？",
-        "description": "虽然基本的编程知识会有帮助，但 ShipAny 设计得非常开发者友好。我们的模板和文档使您即使不是 AI 或云基础设施专家也能轻松入门。"
+        "title": "我可以从哪些 AI 图片生成器中移除 AI 水印？",
+        "description": "我们的工具适用于任何 AI 生成器的图片，包括 Midjourney、DALL-E、Stable Diffusion、Leonardo.AI 等。它可以移除文字水印、Logo 和签名标记。"
       },
       {
-        "title": "我可以用 ShipAny 构建什么类型的 AI SaaS？",
-        "description": "ShipAny 支持广泛的 AI 应用，从内容生成到数据分析工具。我们的模板涵盖流行用例，如 AI 聊天机器人、内容生成器、图像处理应用等。"
+        "title": "Telea 和 Navier-Stokes 算法有什么区别？",
+        "description": "Telea 更快，适用于小型水印和文字。Navier-Stokes 在较大区域提供更好的质量，但处理时间稍长。尝试两者以查看哪个更适合您的特定图片。"
       },
       {
-        "title": "使用 ShipAny 通常需要多长时间才能启动？",
-        "description": "使用 ShipAny，您可以在几小时内完成工作原型，并在几小时内完成生产就绪的应用。我们的一键部署和预配置基础设施显著缩短了传统的数月开发周期。"
+        "title": "图片大小或格式有限制吗？",
+        "description": "我们支持 PNG、JPEG 和 WebP 格式，最大尺寸为 2048px。较大的图片会自动调整大小以保持性能，同时保留质量。"
       },
       {
-        "title": "ShipAny 的基础设施包括什么？",
-        "description": "ShipAny 提供完整的基础设施栈，包括身份验证、数据库设置、API 集成、支付处理和可扩展的云部署。一切都按照行业最佳实践预先配置。"
+        "title": "我需要创建账户或付费才能使用此工具吗？",
+        "description": "不需要！NoAIWatermark 完全免费使用，无需注册。所有处理都在您的浏览器中进行，因此没有服务器成本或使用限制。"
       },
       {
-        "title": "我可以自定义模板以匹配我的品牌吗？",
-        "description": "当然可以！所有 ShipAny 模板都完全可定制。您可以修改设计、功能和功能性以匹配您的品牌标识和特定业务需求，同时保持强大的底层基础设施。"
+        "title": "我可以在移动设备上使用 NoAIWatermark 吗？",
+        "description": "可以！NoAIWatermark 完全响应式，适用于所有现代浏览器，包括移动设备。平板电脑和手机支持触摸手势，可精确标记水印。"
       }
     ]
   },
@@ -385,7 +387,7 @@
       "title": "NoAIWatermark",
       "description": "NoAIWatermark 是免费的在线 AI 水印移除工具。快速、安全、注重隐私。",
       "logo": {
-        "src": "/logo.svg",
+        "src": "/logo.png",
         "alt": "NoAIWatermark"
       },
       "url": "/"
